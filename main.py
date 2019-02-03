@@ -9,6 +9,7 @@ import time
 class LazyLinkedIn(object):
     driver = webdriver.Chrome(executable_path="C:\\Users\\Stratos\\Desktop\\LazyLinkedIn\\venv\\chromedriver.exe")
     driver.implicitly_wait(4)
+    driver.maximize_window()
     user = Credentials.User();
 
     def login(self):
