@@ -25,6 +25,7 @@ class LazyLinkedIn(object):
         jobsButton.click()
         jobName=self.driver.find_element(By.XPATH,"//input[contains(@id,'jobs-search-box-keyword-id')]")
         jobLocation=self.driver.find_element(By.XPATH,"//input[contains(@id,'jobs-search-box-location')]")
+        time.sleep(1.2)
         jobName.send_keys(self.user.job) #TODO FIND SOMETHING BETTER CAUSE THIS SUX
         jobLocation.send_keys(self.user.location)
         time.sleep(2)
