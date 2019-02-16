@@ -1,6 +1,6 @@
 # LazyLinkedIn
 
-LazyLinkedIn is a bot that automatically applies to jobs that match given criteria.
+LazyLinkedIn is a bot that automatically applies to jobs that match the given criteria.
 
 ## Getting Started
 
