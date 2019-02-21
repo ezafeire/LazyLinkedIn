@@ -59,7 +59,7 @@ class LazyLinkedIn(object):
             if(i==25):
                 self.currentPage+=1
                 print("paw selida:", self.currentPage)
-                self.driver.find_element(By.XPATH,"//li[@class='page-list']/ol/li[contains(.,'"+str(self.currentPage)+"')]").click()
+                self.driver.find_element(By.XPATH,"//button[contains(@aria-label,'Page "+str(self.currentPage)+"')]").click()
                 self.parseThroughList(self.currentPage)
             try:
                 x.click()
